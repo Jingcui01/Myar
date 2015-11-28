@@ -189,6 +189,7 @@ int main(int argc, char **argv)
 					}											
 					if(sizef%2==1)
 						P_CUR=lseek(fd_ar,1,SEEK_CUR); 
+					else P_CUR=lseek(fd_ar,0,SEEK_CUR);
                 }
                close(fd_ar);
             }
